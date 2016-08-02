@@ -1,5 +1,5 @@
 class VerifyMailer < ApplicationMailer
-	default from: "noreply@salty-garden-19115.herokuapp.com"
+	default from: "noreply@shielded-springs-63464.herokuapp.com"
 
 	def send_mail( receiver, sid )
 		@user = receiver
