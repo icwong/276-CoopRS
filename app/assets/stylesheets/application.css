@@ -206,6 +206,7 @@ body div, body p body li, html{
 .header-title{
     text-align: center;
     padding-top: 210px;
+    font-family: "Archivo Narrow";
 }
 
 .header-home-title{
@@ -233,6 +234,7 @@ body div, body p body li, html{
     font-size: 50px;
     font-weight: bold;
     text-shadow: 2px 2px black;
+    font-family: "Archivo Narrow";
 }
 
 .resume-title{

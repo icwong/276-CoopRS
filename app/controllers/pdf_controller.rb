@@ -28,9 +28,15 @@ class PdfController < Prawn::Document
     # Table Information
     def product_rows
         [   
-            ["OWNER", @job_one.owner_name, @job_two.owner_name], 
-            ["TYPE" , @job_one.type, @job_two.type], 
-            ["DESCRIPTION", @job_one.body, @job_two.body]
+            ["OWNER", @job_one.owner_name.strip_tags, @job_two.owner_name.strip_tags], 
+            ["TYPE" , @job_one.type.strip_tags, @job_two.type.strip_tags], 
+            ["DESCRIPTION", @job_one.body.strip_tags, @job_two.body.strip_tags]
         ] 
+    end
+end
+
+class String
+    def strip_tags
+     ActionController::Base.helpers.strip_tags(self)
     end
 end
